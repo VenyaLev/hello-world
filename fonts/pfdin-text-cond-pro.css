@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'pfDinTextCondPro_bold';
+	src: url('pfdin-text-cond-pro/pfDinTextCondPro_bold.eot');
+	src: url('pfdin-text-cond-pro/pfDinTextCondPro_bold.eot') format('embedded-opentype'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_bold.woff2') format('woff2'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_bold.woff') format('woff'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_bold.ttf') format('truetype'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_bold.svg#pfDinTextCondPro_bold') format('svg');
+}
+
+@font-face {
+	font-family: 'pfDinTextCondPro_medium';
+	src: url('pfdin-text-cond-pro/pfDinTextCondPro_medium.eot');
+	src: url('pfdin-text-cond-pro/pfDinTextCondPro_medium.eot') format('embedded-opentype'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_medium.woff2') format('woff2'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_medium.woff') format('woff'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_medium.ttf') format('truetype'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_medium.svg#pfDinTextCondPro_medium') format('svg');
+}
+
+@font-face {
+	font-family: 'pfDinTextCondPro_regular';
+	src: url('pfdin-text-cond-pro/pfDinTextCondPro_regular.eot');
+	src: url('pfdin-text-cond-pro/pfDinTextCondPro_regular.eot') format('embedded-opentype'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_regular.woff2') format('woff2'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_regular.woff') format('woff'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_regular.ttf') format('truetype'),
+		 url('pfdin-text-cond-pro/pfDinTextCondPro_regular.svg#pfDinTextCondPro_regular') format('svg');
+}
