@@ -1,0 +1,92 @@
+﻿/**
+ * Created by vtlk on 12.05.15.
+ */
+ 
+	// yamasters validator
+	// document.querySelectorAll("[data-yam-validator]").yamValidator({
+		// text: /^([A-zА-я])*\s*([A-zА-я])*\s*([A-zА-я])*$/g,
+		// mail: /^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/g,
+		// phone: /^(\+)?(\s)?(\d*\s?){7,}$/g
+	// });
+	
+	// // yamasters select
+	// document.querySelectorAll("[data-yam-select]").yamSelect();
+	
+	// // yamasters counter
+	// var dataYamCounter = document.querySelectorAll("[data-yam-counter]");
+	// if(dataYamCounter) {
+		// yamCounter();
+	// }
+	
+
+$(document).ready(function() {
+	
+	var chooseColor = $(".choose-color");
+	if(chooseColor.length) {
+		chooseColor.find("> div").click(function() {
+			$(this).parent().find("> div").each(function() {
+				$(this).removeClass('active');
+			});
+			$(this).addClass('active');
+			$("#body").attr("data-color", "").attr("data-color", $(this).attr("class").replace(" active", ""));
+		});
+	}
+
+
+	
+	
+	//////////////////////////////////////////////////////
+	// yam multiple range
+
+	var multipleRange = $('.multipleRange');
+	if(multipleRange.length) {
+		multipleRange.yamMultipleRange();
+	}
+	
+	
+	//////////////////////////////////////////////////////
+	
+	
+	
+	///////////////////////////////////////////////////////
+	// yam tabulator
+
+	var dataYamTabulator = $('[data-yam-tabulator]');
+	if(dataYamTabulator.length) {
+		dataYamTabulator.yamTabulator();
+	}
+	
+	
+	////////////////////////////////////////////////////////
+	// yam popup system
+
+	var dataOpenWindow = $('[data-open-window]');
+	if(dataOpenWindow.length) {
+		dataOpenWindow.click(function(e) {
+			e.preventDefault();
+			yamPopup($(this).data('open-window'), '', e);
+		});
+	}
+	
+	
+	/////////////////////////////////////////////////////////
+	// fancybox
+
+	var classFancybox = $('.fancybox');
+	if(classFancybox.length) {
+		classFancybox.fancybox();
+	}
+	
+	
+	///////////////////////////////////////////////////////
+	// lazy load
+
+	var lazyLoad = $("img.lazy");
+	if(lazyLoad.length) {
+		lazyLoad.lazyload({
+			effect : "fadeIn"
+		});
+	};
+	/////////////////////////
+
+});
